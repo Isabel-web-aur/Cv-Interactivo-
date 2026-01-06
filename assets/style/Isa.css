@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+.navbar {
+    background-color: transparent !important;
+    padding-top: 20px;
+}
+
 :root {
     --fondo-pantalla: url('../img/dia.jpg'); 
     --color-texto: #3a0d0d; 
@@ -61,10 +72,11 @@ h1{
 }
 p{
     text-align: center;
-    color: rgb(238, 240, 239);
-    font: size 15rem;
+    color: rgb(4, 65, 34);
+    font: size 20rem;
 
 }
+
 
 .btn-mode {
     padding: 10px 20px;
@@ -114,6 +126,7 @@ p{
     background-color:var(--color-fondo);
 
 }
+
 textarea {
     width: 40%;            
     padding: 10px;      
@@ -121,7 +134,7 @@ textarea {
     border: 1px solid #0fc067; 
 }
 .btn-outline-success {
-    color: #1d4905;
+    color: #3b582b;
     border: 1px solid #122b27;
 }
     
@@ -168,6 +181,18 @@ font-family: "tipo lego";
 src: url(../Fonts/tipolego/BitcountPropSingle-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf);
 }
 
+footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    color: #0b2217 !important; /* El verde que quieres */
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+}
 @media (max-width: 768px) {
     
   h1 {

@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
         }
     });
-    const carta = document.getElementById('boton-carta');
+    const carta = document.getElementById('boton-modo');
     const info = document.getElementById('cuadro-info');
     
 
@@ -36,25 +36,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const campoNombre=document.getElementById("nombre");
 const campoCorreo=document.getElementById("correo");
-const miBoton= document.getElementById("botonenviar");
+const campoMensaje = document.getElementById("mensaje");
+const miBoton = document.getElementById("botonenviar");
+const patronLetras = /^[A-ZÁÉÍÓÚÑa-záéíóúñ\s]+$/;
+
+
 
 
 miBoton.addEventListener("click", function(){
-    const nombreEscrito= campoNombre.value;
-    const correoEscrito= campoCorreo.value;
-    if (nombreEscrito ==="" ||correoEscrito==="")
-    {
-        //mostramos un mensaje de error.
-        alert("¡Hola Por favor, completa los campos.¡");
-    }else{
-        //...si todo ésta bien,mostramos un mensaje de éxito.
-        alert("!Mensaje enviado con éxito ,gracias"+nombreEscrito);
-    }
-    // limpiar los cuadros,para el siguiente
-    campoNombre.value="";
-    campoCorreo.value="";
+   
+    const nombreEscrito = campoNombre.value;
+    const correoEscrito = campoCorreo.value;
+    const mensajeEscrito = campoMensaje.value;
+  
+ 
 
-    const campoMensaje=document.getElementById("mensaje");
-    const mensajeEscrito=campoMensaje.value;
-    campoMensaje.value="";
+    
+    if (nombreEscrito === "" || correoEscrito === "" || mensajeEscrito === "") {
+        alert("Por favor, completa todos los campos.");
+        return; 
+    }
+
+    
+    if (!patronLetras.test(nombreEscrito)) {
+        alert("Solo se permiten letras.");
+        return; 
+    }
+
+   
+    alert("¡Mensaje enviado con éxito, gracias " + nombreEscrito + "!");
+    
+   
+    campoNombre.value = "";
+    campoCorreo.value = "";
+    campoMensaje.value = "";
 });
