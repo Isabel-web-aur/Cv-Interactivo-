@@ -4,36 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cv Isabel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/style/Isa.css">
 </head>
 <body>
-
+<nav class="navbar navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./assets/pages/contacto.html">
+      
+      <h1>Contacto</h1>
+    </a>
+  </div>
+</nav>
     <div class="contenedor-principal">
-        <img src="./assets/img/carta.jpg" alt="Carta Sakura Card Captor" class="carta-sakura" id="boton-carta">
+        <button id="boton-modo" class="btn-mode">🌙 Cambiar Modo</button>
 
-        <div class="info-cv" id="cuadro-info">
-            <h1>Isabel Pacheco</h1>
-            <p class="profesion">Desarrolladora Web Frontend</p>
-            
-            <div class="detalles">
-                <h3>Sobre mí</h3>
-                <p>Estudiante de informática apasionada por el diseño y la tecnología.</p>
-                
-                <h3>Contacto</h3>
-                <p>📍 Santiago, Chile</p>
-                <p>📧 isabel.pacheco@email.com</p>
+        <div class="seccion-perfil">
+            <img src="/assets/img/noelle.jpg" alt="Carta Sakura Card Captor" width="40px" height="50px" class="carta-sakura" id="boton-carta">
+
+            <div class="info-cv" id="cuadro-info">
+                <h1>Isabel Pacheco</h1>
+                <p class="profesion">Técnico en comercio exterior</p>
+                <div class="detalles">
+                    <h3>Sobre mi</h3>
+                    <p>
+                    En el año 2011 termine mi enseñanza media titulandome de Técnico en ventas, la cúal me ayudo en habilidades blandas para forjar mi camino a ventas y posteriorme a ello en áreas productivas. La cual me permitio destacar en trabajo en equipo y un mayor enfoque en trabajo bajo presión.<br>Mi fortaleza es aprender en tiempos cortos trabajos a realizar desde manuales, hasta áreas administrativas<br> pudiendo colaborar en distintos puestos de alguna empresa.
+                    </p>
+                    <Strong>Educación</Strong>
+                    <p><strong>Escuela De Comercio 2022-2024 </strong>
+                <br>Técnico de nivel superior en administración en comercio exterior.<br>
+                <strong> Liceo Polivalente 133
+                2009-2011 </strong><br>Técnico en ventas </p>
+                </div>
             </div>
         </div>
-    </div>
+
+        <div id="carouselTextos" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="slide-texto">
+                        <h6><strong> Hela Spice Latam – Operaria 2021 - 2024</strong></h6>
+                        <p>Contribución en la gestión y planificación de la producción<br>
+                    Colaboración en la implementación de mejoras en producción.<br>
+                Participación en auditorías relacionadas a la trazabilidad<br> 
+                Asistencia en la carga y descarga de materia prima..<br></p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="slide-texto">
+                        <h6><Strong>Ballerina- Operaria 2020-2021</Strong></h6>
+                        <p>Ayudante de manejo de máquina de producción<br>
+                        Elaboración de informes de productividad diaria<br>
+                    Contribución en aseguramiento de calidad en productos.<br> </p>
+                    </div>
+                </div>
+            
+                <div class="carousel-item">
+                    <div class="slide-texto">
+                        <h6><strong>Pepsico -Operaria 2015 2016</strong></h6>
+                        <p> Monitoreo y ajuste de parámetros en equipos de producción.<br>
+                        Participación en el montaje y desmontaje de líneas de producción.<br> 
+                        Manipulación de producto para procesar su debido empaquetado.<br> </p>
+                    </div>
+                </div>
+            
+                <div class="carousel-item">
+                    <div class="slide-texto">
+                        <h6><strong>Wanser- Vendedora  2012-2014</h6><strong></h6>
+                        <p>Atención al cliente de forma presencial, resolviendo dudas sobre modelos,diseños y tallaje para gestionar ventas
+                             y minoristas<br>
+                        Apoyo en área de bodega, gestionado el orden de acorde a temporada.<br>
+                    Mantener orden y limpieza en área de trabajo.<br> 
+                    Apoyo constante en área de vitrina destacando diseños para incrementar ventas.<br>
+
+                </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
 
     <footer>
         <p>&copy; 2026 Isabel Pacheco. Todos los derechos reservados.</p>
     </footer>
 
-   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/scripts/script.js"></script>
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="./assets/scripts/script.js"></script>
   </body>
 </html>
