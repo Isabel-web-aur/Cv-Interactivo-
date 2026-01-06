@@ -53,13 +53,16 @@ body::before {
 
 h1{
     text-align: center;
-    color: rgb(20, 20, 4);
-    font-size: 20px;
+    color: rgb(78, 78, 5);
+    font-family: "tipo lego";
+    font: size 60px;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 p{
     text-align: center;
     color: rgb(238, 240, 239);
-    font: size 15rem;;
+    font: size 15rem;
 
 }
 
@@ -102,14 +105,26 @@ p{
     opacity: 1;
     padding: 20px;
 }
+.informacion{
+    text-align: center;
+}
 .parrafo{
- height: 10px;
- overflow: hidden;
-border: 2px solid var(--color-texto);
-border-radius: 10px;
-margin-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    background-color:var(--color-fondo);
 
 }
+textarea {
+    width: 40%;            
+    padding: 10px;      
+    border-radius: 20px 0 0 20px;     
+    border: 1px solid #0fc067; 
+}
+.btn-outline-success {
+    color: #1d4905;
+    border: 1px solid #122b27;
+}
+    
 /* --- Carrusel --- */
 
 .slide-texto {
@@ -165,7 +180,7 @@ src: url(../Fonts/tipolego/BitcountPropSingle-VariableFont_CRSV\,ELSH\,ELXP\,sln
         padding: 20px;
         border-radius: 30px;
         margin: 10px;
-    }
+                }
 
    
     .slide-texto h6 {
