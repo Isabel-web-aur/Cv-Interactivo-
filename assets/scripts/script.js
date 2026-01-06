@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
         }
     });
-    const carta = document.getElementById('boton-modo');
-    const info = document.getElementById('cuadro-info');
-    
+  //carta
+    const carta = document.getElementById('boton-carta'); // La imagen de Sakura
+    const info = document.getElementById('cuadro-info'); // El cuadro con tu info
 
     if (carta && info) {
         carta.addEventListener('click', () => {
@@ -26,9 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
             info.classList.toggle('visible');
             
             
-            carta.style.transform = "scale(0.95)";
+            carta.style.transform = "scale(0.9)";
             setTimeout(() => {
-                carta.style.transform = "";
+                carta.style.transform = "scale(1)";
             }, 100);
         });
     }
