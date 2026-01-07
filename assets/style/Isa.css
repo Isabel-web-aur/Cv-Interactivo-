@@ -183,35 +183,47 @@ textarea {
 
 
 
+
 .slide-texto {
-    height: 200px; 
-    margin: 20px;
-    max-width: 500px;
+    
+    min-height: 300px; 
+    height: auto; 
+    
+    margin: 40px auto; 
+    max-width: 800px;  
+    width: 90%;        
+    
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     
-    padding: 20px; 
-    border-radius: 50px 0 50px 0; 
-    
-    background-color: rgba(255, 255, 255, 0.1); 
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); 
-    border: 1px solid rgba(207, 63, 63, 0.2);
+    padding: 50px; 
+    border-radius: 80px; 
+    background-color: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); 
 }
 
 .slide-texto h6 {
-    color: rgb(14, 59, 21);
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    text-shadow: 1px 1px 2px rgba(42, 133, 83, 0.2);
+    color: var(--color-texto);
+    font-family: "tipo lego", sans-serif;
+    font-size: 1.8rem; 
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .slide-texto p {
-    color: rgb(82, 78, 80);
-    font-size: 5rem;
-    text-shadow: 10px 10px 10px rgba(243, 239, 239, 0.3);
+    color: white; 
+    
+    font-size: 1.6rem !important; 
+    line-height: 1.4;
+    max-width: 90%;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 @font-face{
 font-family: "tipo cursiva";
